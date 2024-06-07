@@ -2,12 +2,12 @@ package mymath
 
 import "math"
 
-func Sqrt(x float64) float64 {
+func Sqrt(x float64) int {
     z := 1.0
     for i := 0; i < 10; i++ {
         z -= (z*z - x) / (2*z)
     }
-    return z
+    return int(z)
 }
 
 func Pow(x, y float64) float64 {
