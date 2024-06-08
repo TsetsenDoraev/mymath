@@ -7,16 +7,5 @@ func Sqrt(x float64) float64 {
 }
 
 func Pow(x, y float64) float64 {
-    result := 1.0
-    for i := 0; i < int(y); i++ {
-        result *= x
-    }
-    return result
-}
-
-func Max(x, y float64) float64 {
-    if x > y {
-        return x
-    }
-    return y
+    return math.Pow(x,y)
 }
